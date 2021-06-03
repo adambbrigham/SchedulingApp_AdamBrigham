@@ -9,8 +9,7 @@ Application version 1.1
 II.
 Author: 
 Adam Brigham
-abrig75@wgu.edu
-801-831-9205
+
 
 III.
 Purpose:
