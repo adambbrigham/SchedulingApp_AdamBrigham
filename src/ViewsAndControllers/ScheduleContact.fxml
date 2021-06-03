@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="1012.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewsAndControllers.ScheduleContactController">
+   <children>
+      <TableView fx:id="AppointmentsTable" layoutX="10.0" layoutY="68.0" onSort="#onActionApptsTable" prefHeight="200.0" prefWidth="990.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="40.0" text="ID" />
+          <TableColumn fx:id="titleColumn" prefWidth="79.20000839233398" text="Title" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="139.2000274658203" text="Description" />
+            <TableColumn fx:id="locationColumn" minWidth="0.0" prefWidth="109.60003662109375" text="Location" />
+            <TableColumn fx:id="TypeColumn" prefWidth="108.0" text="Type" />
+            <TableColumn fx:id="contactColumn" prefWidth="151.20001220703125" text="Contact" />
+            <TableColumn fx:id="startColumn" prefWidth="147.20001220703125" text="Start" />
+            <TableColumn fx:id="endColumn" prefWidth="138.39996337890625" text="End" />
+            <TableColumn fx:id="customerIdColumn" prefWidth="75.199951171875" text="CustomerID" />
+        </columns>
+      </TableView>
+      <Label layoutX="424.0" layoutY="26.0" text="Schedule by Contact">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_RIGHT" layoutX="869.0" layoutY="286.0" prefHeight="26.0" prefWidth="130.0" spacing="10.0">
+         <children>
+            <Button fx:id="MainMenuButton" minWidth="130.0" mnemonicParsing="false" onAction="#onActionMainMenu" text="Main Menu" />
+         </children>
+      </HBox>
+      <ComboBox fx:id="contactsCombo" layoutX="430.0" layoutY="286.0" onAction="#contactsCombo" prefWidth="150.0" promptText="Select a contact" />
+      <Label layoutX="377.0" layoutY="290.0" text="Contacts" />
+   </children>
+</AnchorPane>
